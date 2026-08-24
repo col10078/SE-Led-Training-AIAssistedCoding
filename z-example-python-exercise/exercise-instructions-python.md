@@ -1,8 +1,8 @@
-# Exercise 1 — Python Notebook: Feature Storage Alert Email
+# Extra Example Exercise — Python Notebook: Public Feature Layer Alert Email
 
 > 💡 **Tip:** Press `Ctrl+Shift+V` to view this file as a formatted preview (or `Cmd+Shift+V` on Mac).
 
-**What you'll build:** an ArcGIS Notebook that an administrator can run to check the org's feature storage, then email the admin when any owner's total storage — or any new item's storage — crosses a threshold.
+**What you'll build:** an ArcGIS Notebook that an administrator can run to regularly get email notifications of new items and specifically flag new public facing items.
 
 We'll design it first using `/grill-with-docs`, then build it.
 

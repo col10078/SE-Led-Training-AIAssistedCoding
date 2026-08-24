@@ -1,8 +1,12 @@
-# Exercise 4 — Maps SDK for JavaScript + AI Components App
+# Exercise 2 — Maps SDK for JavaScript + AI Components App
 
 > 💡 **Tip:** Press `Ctrl+Shift+V` to view this file as a formatted preview (or `Cmd+Shift+V` on Mac).
 
-**What you'll build:** a web app using the ArcGIS Maps SDK for JavaScript and its AI Components — users sign in, load and switch between web maps, and chat with a set of agents (the built-in ones plus two custom agents you define).
+This is a much more deep developer topic, so you have a choose your own adventure here. If you are brand new to the ArcGIS Maps SDK for JavaScript, start with Step 1a - beginner workflow. This will be a more straightfoward app development process to start out with. If you are comfortable with the ArcGIS Maps SDK for JavaScript and want to dive right in, start with the Step 1b workflow. This will involve OAuth, the ArcGIS AI Components, and some more complex app development and troubleshooting.
+
+**What you'll build for 1a:** a web app using the ArcGIS Maps SDK for JavaScript and its AI Components — users sign in, load and switch between web maps, and chat with a set of agents (the built-in ones plus two custom agents you define).
+
+**What you'll build for 1b:** a web app using the ArcGIS Maps SDK for JavaScript and its AI Components — users sign in, load and switch between web maps, and chat with a set of agents (the built-in ones plus two custom agents you define).
 
 We'll design it first using `/grill-with-docs`, then build it.
 
@@ -13,7 +17,31 @@ We'll design it first using `/grill-with-docs`, then build it.
 
 ---
 
-## Step 1 — The prompt
+## Step 1a — The prompt - beginner workflow
+
+1. Open a new chat in the GitHub Copilot panel by selecting the `+` button at the top of the window. Ensure your model is set to "Auto".
+
+2. Start by typing a forward slash (`/`) to see the list of available skills. Select `/grill-with-docs` from the list by arrowing up or down to highlight it and then press tab, but do not press enter yet.
+
+3. Paste the following prompt after the pill.
+
+```
+Build a web app using the ArcGIS Maps SDK for JavaScript. No sign-in or OAuth. Use a single hardcoded API key for the basemap.
+
+Show a full-screen map of U.S. counties using a public ArcGIS Living Atlas demographic feature layer (please find a current public ACS county-level layer and confirm it loads). Color the counties by median household income as a choropleth.
+
+Add a side panel with a chart. When I hover over a county, the chart should smoothly update to show that county's data, and the county name and key stats should appear above the chart. When I move off, the chart returns to a default state. Make the hover feel responsive and highlight the hovered county on the map.
+
+Make it look polished: clean layout, a title, a legend, and a nice color ramp. Use a charting approach that animates between values on hover.
+
+Walk me through the setup step by step, explain each ArcGIS SDK concept as you introduce it.
+```
+
+4. Press `Enter` to run the skill.
+
+5. Skip Step 1b below and jump to Step 2.
+
+## Step 1b — The prompt - advanced workflow
 
 1. Open a new chat in the GitHub Copilot panel by selecting the `+` button at the top of the window. Ensure your model is set to "Auto".
 
@@ -38,32 +66,32 @@ Before grilling me on design decisions, use the the js-sdk skill and the arcgis-
 
 Ask me about anything ambiguous before we settle the design.
 
-Write all code and files for this project only inside the `exercise-03-javascriptsdk/` folder in this repo. Create it if it doesn't exist. Don't add or modify files anywhere else in the repo.
+Write all code and files for this project only inside the `exercise-02-javascriptsdk/` folder in this repo. Create it if it doesn't exist. Don't add or modify files anywhere else in the repo.
 ```
 
 4. Press `Enter` to run the skill.
 
-## Step 5 — What happens next
+## Step 2 — What happens next
 
 1. Answer each question in the chat. You can answer however you like, as long it's clear to the model which question you are answering. You can also ask follow up questions to clarify anything you don't understand. The skill will write down the design as you go.
    - Example: "q1: agreed, q2: explain in less technical terms, q3-6: agreed, q7: yes but add ..."
 
-   > [!NOTE]
-   > Copilot may ask your approval to run commands during the course of a response. Be sure to review the **command summary** beneath the code preview to see what commands it wants to run. If you approve, click **Allow**. If you don't, click **Skip** and ask the model to clarify or change its approach.
+> [!NOTE]
+> Copilot may ask your approval to run commands during the course of a response. Be sure to review the **command summary** beneath the code preview to see what commands it wants to run. If you approve, click **Allow**. If you don't, click **Skip** and ask the model to clarify or change its approach.
 
-   ![Command approval from copilot](../docs/assets/copilot-chat-run-command-approval.jpg)
+![Command approval from copilot](../docs/assets/copilot-chat-run-command-approval.jpg)
 
-   > [!NOTE]
-   > **Scaling up to bigger builds:** For a small app like this, going straight from grilling to building is fine. For a bigger, multi-part app, this is where you'd add two steps first:
-   >
-   > - **`/to-spec`** — turns the design you just settled into a written spec you can review.
-   > - **`/to-tickets`** — breaks that spec into small, ordered tickets, each one a buildable chunk.
-   >
-   > **Why bother?** It keeps the AI working on one clearly-defined piece at a time instead of juggling the whole app at once. That's where large AI builds usually drift — losing track of earlier decisions as the work grows. The spec and tickets are the paper trail that keeps it on course.
+> [!NOTE]
+> **Scaling up to bigger builds:** For a small app like this, going straight from grilling to building is fine. For a bigger, multi-part app, this is where you'd add two steps first:
+>
+> - **`/to-spec`** — turns the design you just settled into a written spec you can review.
+> - **`/to-tickets`** — breaks that spec into small, ordered tickets, each one a buildable chunk.
+>
+> **Why bother?** It keeps the AI working on one clearly-defined piece at a time instead of juggling the whole app at once. That's where large AI builds usually drift — losing track of earlier decisions as the work grows. The spec and tickets are the paper trail that keeps it on course.
 
 2. When the design is settled, copilot may begin implementing on its own. If not you can use the `/implement` skill to tell it to start building the app and any other files needed for the project.
 
-## Step 6 - Building and running your app
+## Step 3 - Building and running your app
 
 Because the agent designs the app during the interview, the exact run command depends on what it built (a plain HTML page, a Vite app, and so on). These steps work for any of them:
 
