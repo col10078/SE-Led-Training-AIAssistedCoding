@@ -227,6 +227,6 @@ npm start
 
 5. Add your new **radar chart widget** to your Experience Builder to see it live.
 
-6. Add this Web Map to your Experience Builder to test the functionality: `df060eab8c4447c0a32fd4d874f81e7a`
+6. Add this Web Map to your Experience Builder to test the functionality: `3298b42d5f534ab886fbe4b2364bb38f`
 
 7. Make changes as needed to the widget using Copilot. As you edit the widget code, the client should automatically update and you can refresh your browser to see changes.
