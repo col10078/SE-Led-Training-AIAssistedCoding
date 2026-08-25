@@ -2,24 +2,23 @@
 
 [Back to the pre-work overview](../README.md)
 
-## Install Node.js and Python
+## Install Node.js
 
 > [!NOTE]
-> We will be using Python 3.13 and Node version 24.19.0
-> See below for notes on Node version.
-> If you have Node and Python already configured on your machine and don't want to use the same versions, that's fine; just proceed at your own risk :)
+> We will be using Node.js version 24.19.0.
+> If you already have Node.js configured on your machine and don't want to use the same version, that's fine; just proceed at your own risk :)
 > If you are unsure, follow the steps below.
 
-### Step 1: Node.js
+### Node.js
 
 Node.js runs JavaScript outside the browser so you can develop on localhost.
 
 #### Windows
 
 - Open a new Powershell terminal as an Administrator.
-  
+
 > [!NOTE]
-> If you don't have Admin access on your machine, download the Windows installer from [Node Download](https://nodejs.org/en/download). Accept all defaults. Then skip to Python install.
+> If you don't have Admin access on your machine, download the Windows installer from [Node Download](https://nodejs.org/en/download). Accept all defaults. Then skip to the verification commands below.
 
 - Copy, paste, and run the following command to install Node.js:
 
@@ -63,45 +62,6 @@ Mac users can use `nvm` (Node Version Manager) to install Node.js. If you alread
 
   # Verify npm version:
   npm -v # Should print "11.17.0".
-```
-
-### Step 2: Python
-
-Python is used for the ArcGIS Notebooks and ArcPy section. We will install the popular `uv` Python environment manager to manage versions and dependencies. You will install Python using `uv` later in the workshop.
-
-#### Windows
-
-- Install the **uv** package to support Python in VS Code:
-
-  ```powershell
-  powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-  ```
-
-  See below for the expected output once it has finished installing. If you are prompted during the installation, select/enter "Y" or "Yes" to continue.
-  ![A Windows PowerShell terminal showing a completed uv installation](assets/uv-install-terminal.png)
-
-- Close Powershell and reopen it.
-- Verify that uv is installed:
-
-  ```powershell
-  uv --version
-  ```
-
-  ![A Windows PowerShell terminal showing a completed uv installation](assets/uv-post-install-confirm.png)
-
-#### Mac
-
-- Open a terminal and run the following command to install uv:
-
-```shell
-  curl -LsSf https://astral.sh/uv/install.sh | sh
-```
-
-- Close and reopen the terminal.
-- Verify that uv is installed:
-
-```shell
-  uv --version
 ```
 
 Next: [Set up Experience Builder Developer Edition (optional)](04-experience-builder.md)

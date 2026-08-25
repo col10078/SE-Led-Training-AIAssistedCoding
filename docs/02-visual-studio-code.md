@@ -8,13 +8,11 @@ Open the **Extensions** panel, search for each extension by name, and install it
 
 ![The Extensions icon highlighted in the VS Code activity bar](assets/vscode-extensions-panel.png)
 
-| Extension               | Publisher | Why you need it                                                                                       |
-| ----------------------- | --------- | ----------------------------------------------------------------------------------------------------- |
-| **GitHub Copilot Chat** | GitHub    | Provides the AI assistant in VS Code. It might already be included in the current version.            |
-| **Python**              | Microsoft | Supports the ArcGIS Notebooks and ArcPy section, including Pylance and the Python interpreter picker. |
-| **Jupyter**             | Microsoft | Lets you prototype `.ipynb` notebooks locally before uploading them to ArcGIS Online.                 |
-| **Live Preview**        | Microsoft | Renders HTML and CSS in a live-refreshing preview for the Hub cards section.                          |
-| **ESLint**              | Microsoft | Flags JavaScript and TypeScript mistakes in the Maps SDK and Experience Builder sections.             |
+| Extension               | Publisher | Why you need it                                                                            |
+| ----------------------- | --------- | ------------------------------------------------------------------------------------------ |
+| **GitHub Copilot Chat** | GitHub    | Provides the AI assistant in VS Code. It might already be included in the current version. |
+| **Live Preview**        | Microsoft | Renders HTML and CSS in a live-refreshing preview for the Hub cards section.               |
+| **ESLint**              | Microsoft | Flags JavaScript and TypeScript mistakes in the Maps SDK and Experience Builder sections.  |
 
 ## Step 3: Sign in to GitHub Copilot
 
@@ -112,4 +110,4 @@ After your [IST request from Step 2](01-github-and-copilot.md#step-2-request-git
 
 9. You should see a new folder called `SE-Led-Training-AIAssistedCoding` in your `C:\dev` (on Mac, `~/dev`) folder. You can now open this folder in VS Code.
 
-Next: [Install Node.js, Python, and Git](03-development-tools.md)
+Next: [Install Node.js](03-development-tools.md)
