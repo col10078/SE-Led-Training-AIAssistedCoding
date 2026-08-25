@@ -1,6 +1,6 @@
 # Exercise 0 — VS Code and GitHub Copilot setup
 
-[Back to the workshop overview](../README.md)
+[Back to the pre-work overview](../README.md)
 
 > 💡 **Tip:** Press `Ctrl+Shift+V` to view this file as a formatted preview (or `Cmd+Shift+V` on macOS).
 
