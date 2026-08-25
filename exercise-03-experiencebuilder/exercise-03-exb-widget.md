@@ -244,8 +244,8 @@ npm start
 
 6. Add this Web Map to your Experience Builder to test the functionality: `3298b42d5f534ab886fbe4b2364bb38f`
    - This web map focuses on fictional indicator data for Guinea. Here is the likely formatting for the radar chart:
-     - Use the adm1_name for the series label
-     - Use cap_health, cap_food, cap_wash, cap_education, cap_protection, and cap_shelter as the Axes of the radar chart
+     - Use `adm1_name` for the series label
+     - Use `cap_health`, `cap_food`, `cap_wash`, `cap_education`, `cap_protection`, and `cap_shelter` as the axes of the radar chart
      - Example of the finished widget:
        ![Example Experience Builder Radar Widget](../docs/assets/exb-example-radar-widget.png)
 
