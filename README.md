@@ -25,9 +25,9 @@ Complete the guides in order:
 
 ### Optional guides
 
-[Guide 04: Set up Experience Builder Developer Edition](docs/04-experience-builder.md)
+- [Guide 04: Set up Experience Builder Developer Edition](docs/04-experience-builder.md)
 
 > [!NOTE]
-> Complete Guide 05 if you do not have an Esri Federal ArcGIS Online account or want to use a different ArcGIS Online account.
+> Complete [Guide 05](docs/05-create-arcgis-online-oauth-application.md) if you do not have an Esri Federal ArcGIS Online account or want to use a different ArcGIS Online account.
 
-[Guide 05: Create an OAuth application in ArcGIS Online](docs/05-create-arcgis-online-oauth-application.md)
+- [Guide 05: Create an OAuth application in ArcGIS Online](docs/05-create-arcgis-online-oauth-application.md)
