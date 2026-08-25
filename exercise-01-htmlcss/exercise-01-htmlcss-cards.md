@@ -1,6 +1,7 @@
 # Exercise 1 — ArcGIS Hub: Glass Cards (HTML / CSS)
 
 > 💡 **Tip:** Press `Ctrl+Shift+V` to view this file as a formatted preview (or `Cmd+Shift+V` on Mac).
+> New to VS Code? Keep [Exercise 0 — VS Code and GitHub Copilot setup](../exercise-00-vscode-setup/exercise-00-vscode-setup.md) open for reference.
 
 **What you'll build:** a set of modern "glassmorphism" cards in HTML and CSS that you can drop into an ArcGIS Hub site — frosted, semi-transparent panels that sit over a background image or map. Be creative with this as you give your prompt design information and answer the assistant's questions.
 
