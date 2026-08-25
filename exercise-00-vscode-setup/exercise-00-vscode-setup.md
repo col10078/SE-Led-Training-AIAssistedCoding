@@ -174,6 +174,8 @@ If you are more experienced with development, but still want to ensure Copilot d
 Create a project-wide Copilot instruction that makes ASD-STE100 Simplified Technical English the default for all technical writing in this repo. Apply it to docs, instructions, explanations, user-facing text, and comments, but don’t alter code, commands, API names, file paths, product names, or established ArcGIS terminology just to satisfy STE. Put it in the standard repo-wide Copilot instructions file and don’t change anything else.
 ```
 
+Copilot should then create the project-wide instruction file with the specified guidelines. These can be reviewed in the Explorer panel under the standard location for repo-wide Copilot instructions. This is usually a `.github/copilot-instructions.md` file.
+
 ## 6. Use the integrated terminal
 
 Open the terminal with **Terminal > New Terminal** or `` Ctrl+` `` on Windows and macOS. It opens in the bottom panel and lets you run project commands without leaving VS Code.
