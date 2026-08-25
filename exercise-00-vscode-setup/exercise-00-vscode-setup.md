@@ -190,7 +190,7 @@ Run each command separately and read its output before continuing:
 
    > **Windows note:** If the command above returns an error, try:
    >
-   > `npm.cmd --verison`
+   > `npm.cmd --version`
 
 The version commands should each print a version number. This workshop recommends Node.js `24.19.0` and npm `11.17.0`. If either command is not found, complete [Install Node.js](../docs/03-development-tools.md#install-nodejs) before starting the project-building exercises.
 
