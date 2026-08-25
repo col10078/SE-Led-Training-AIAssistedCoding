@@ -19,7 +19,7 @@ We'll design it first using `/grill-with-docs`, then build it.
 
 ## Step 1a — The prompt - beginner workflow
 
-1. Open a new chat in the GitHub Copilot panel by selecting the `+` button at the top of the window. Ensure your model is set to either **GPT 5.6 Sol** or **Opus 5**.
+1. Open a new chat in the GitHub Copilot panel by selecting the `+` button at the top of the window. Ensure your model is set to either **GPT-5.6 Sol** or **Claude Opus 5**.
 
 2. Start by typing a forward slash (`/`) to see the list of available skills. Select `/grill-with-docs` from the list by arrowing up or down to highlight it and then press tab, but do not press enter yet.
 
