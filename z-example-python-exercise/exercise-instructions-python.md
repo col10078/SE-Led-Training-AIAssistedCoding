@@ -81,6 +81,10 @@ npx skills@latest add mattpocock/skills
 npx skills@latest add valdesrosier/arcgis-skills
 ```
 
+> **Windows note:** If the command above returns an error, try:
+>
+> `npx.cmd skills@latest add valdesrosier/arcgis-skills`
+
 1. As with `Command 1`, press the spacebar on your keyboard to select all ArcGIS Skills. All the empty dots in the terminal will turn green indicating they have been selected. Press `Enter` to continue.
 
 2. No need to install additional agents, so press `Enter` again.

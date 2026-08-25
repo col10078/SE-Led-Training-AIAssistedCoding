@@ -16,5 +16,5 @@ Complete the guides in order:
 
 1. [Create a GitHub account and request Copilot access](docs/01-github-copilot-vscode-and-git.md)
 2. [Set up Visual Studio Code](docs/02-visual-studio-code.md)
-3. [Install Node.js, Python, and Git](docs/03-development-tools.md)
+3. [Install Node.js](docs/03-development-tools.md)
 4. [Set up Experience Builder Developer Edition (optional)](docs/04-experience-builder.md)
