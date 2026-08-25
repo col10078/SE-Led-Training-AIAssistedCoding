@@ -160,7 +160,7 @@ I plan to complete Exercise 1. What are the first two steps?
 
 This follow-up stays in the same conversation, so Copilot can use the context it already gathered.
 
-## 5. Have copilot write a project-level instruction for you
+## 4. Have Copilot write a project-level instruction for you
 
 If you are new to programming, it may be helpful to have copilot respond using grammar and vocabulary that is not so developer focused. You can ask Copilot to respond, every time, in a more beginner-friendly manner. Try something like:
 
