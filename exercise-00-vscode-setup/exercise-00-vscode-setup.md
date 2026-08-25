@@ -160,7 +160,21 @@ I plan to complete Exercise 1. What are the first two steps?
 
 This follow-up stays in the same conversation, so Copilot can use the context it already gathered.
 
-## 4. Use the integrated terminal
+## 5. Have copilot write a project-level instruction for you
+
+If you are new to programming, it may be helpful to have copilot respond using grammar and vocabulary that is not so developer focused. You can ask Copilot to respond, every time, in a more beginner-friendly manner. Try something like:
+
+```text
+Create a project-wide instruction that makes sure each response you give me uses simple terms suitable for a beginner.
+```
+
+If you are more experienced with development, but still want to ensure Copilot doesn't go too deep into the woods, you can do the same thing but with a slightly more focused instruction, such as:
+
+```text
+Create a project-wide Copilot instruction that makes ASD-STE100 Simplified Technical English the default for all technical writing in this repo. Apply it to docs, instructions, explanations, user-facing text, and comments, but don’t alter code, commands, API names, file paths, product names, or established ArcGIS terminology just to satisfy STE. Put it in the standard repo-wide Copilot instructions file and don’t change anything else.
+```
+
+## 6. Use the integrated terminal
 
 Open the terminal with **Terminal > New Terminal** or `` Ctrl+` `` on Windows and macOS. It opens in the bottom panel and lets you run project commands without leaving VS Code.
 
