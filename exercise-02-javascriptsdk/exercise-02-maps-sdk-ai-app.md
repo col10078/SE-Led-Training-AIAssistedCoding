@@ -1,6 +1,7 @@
 # Exercise 2 — Maps SDK for JavaScript + AI Components App
 
 > 💡 **Tip:** Press `Ctrl+Shift+V` to view this file as a formatted preview (or `Cmd+Shift+V` on Mac).
+> New to VS Code? Keep [Exercise 0 — VS Code and GitHub Copilot setup](../exercise-00-vscode-setup/exercise-00-vscode-setup.md) open for reference.
 
 This is a much more deep developer topic, so you have a choose your own adventure here. If you are brand new to the ArcGIS Maps SDK for JavaScript, start with Step 1a - beginner workflow. This will be a more straightfoward app development process to start out with. If you are comfortable with the ArcGIS Maps SDK for JavaScript and want to dive right in, start with the Step 1b workflow. This will involve OAuth, the ArcGIS AI Components, and some more complex app development and troubleshooting.
 

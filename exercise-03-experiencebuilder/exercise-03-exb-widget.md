@@ -1,12 +1,13 @@
 # Exercise 3 — Experience Builder: Radar Chart Widget
 
 > 💡 **Tip:** Press `Ctrl+Shift+V` to view this file as a formatted preview (or `Cmd+Shift+V` on Mac).
+> New to VS Code? Keep [Exercise 0 — VS Code and GitHub Copilot setup](../exercise-00-vscode-setup/exercise-00-vscode-setup.md) open for reference.
 
 **What you'll build:** a custom ArcGIS Experience Builder widget that draws a radar (spider) chart from a configured feature layer, with a rich settings panel.
 
 We'll design it first using `/grill-with-docs`, then build it.
 
-> **Before you start:** This exercise requires Experience Builder Developer Edition, installed in pre-work doc 4: [Set up Experience Builder Developer Edition (optional)](04-experience-builder.md). We're going to use **Experience Builder Developer Edition 1.20** which will allow you to deploy custom widgets on **ArcGIS Enterprise 12.1**. When developing custom widgets in the future, confirm the version you need with the [Experience Builder release and version table](https://developers.arcgis.com/experience-builder/guide/release-versions/).
+> **Before you start:** This exercise requires Experience Builder Developer Edition, installed in pre-work doc 4: [Set up Experience Builder Developer Edition (optional)](../docs/04-experience-builder.md). We're going to use **Experience Builder Developer Edition 1.20** which will allow you to deploy custom widgets on **ArcGIS Enterprise 12.1**. When developing custom widgets in the future, confirm the version you need with the [Experience Builder release and version table](https://developers.arcgis.com/experience-builder/guide/release-versions/).
 
 ---
 
