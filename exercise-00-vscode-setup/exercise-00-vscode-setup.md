@@ -210,7 +210,7 @@ If Copilot asks to run the command for you, use the **Review actions before appr
 
 ### Updating your repository from the original
 
-Forked repositories won't automatically reflect changes from the original. To ensure you have the most up to date instructions for each of the exercises, open a new terminal in VS Code and run the following commands one by one:
+Forked repositories won't automatically reflect changes from the original. To ensure you have the most up-to-date instructions for each of the exercises, open a new terminal in VS Code and run the following commands one by one:
 
 1.  ```
     git remote add upstream https://github.com/valdesrosier/SE-Led-Training-AIAssistedCoding.git
