@@ -142,8 +142,7 @@ The same workflow will work for other apps and maps. Be specific in your prompts
 
 If you didn't need to work through the OAuth workflow this time and used the provided Client ID, follow [pre-work document 05](../docs/05-create-arcgis-online-oauth-application.md) to learn more.
 
-Once you've created the app or OAuth with an API key, you can ask the agent where to put it — usually an `.env.local` file or a config value. It will tell you the exact variable name for the app it built. This ID is not a secret so it is ok to share with the agent.
-
+Once you've created the app and have an OAuth **Client ID**, you can ask the agent where to put it — usually an `.env.local` file or a config value. OAuth Client IDs are not secrets and are OK to share with the agent; API keys and client secrets are sensitive and should not be shared.
 > [!IMPORTANT]
 > NEVER share API keys or secrets with the agent. It doesn't need them to build your app, and they are sensitive information that should not be shared.
 
