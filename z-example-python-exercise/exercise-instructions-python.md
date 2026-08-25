@@ -102,7 +102,7 @@ npx skills@latest add valdesrosier/arcgis-skills
 
 1. Open **Copilot Chat** using the chat box to the right of the search bar at the top of the Visual Studio window.
 
-2. Ensure you are on "Agent" mode and select "Auto" for the model.
+2. Ensure you are on "Agent" mode and select either **GPT-5.6 Sol** or **Claude Opus 5** for the model.
 
 3. When it's ready, start by typing a forward slash (`/`) to see the list of available skills. Select `/setup-matt-pocock-skills` from the list by arrowing up or down to highlight it and then press tab. You'll notice that the slash and text turns into a blue pill shape. This is normal for invoking a skill. You are able to type more context after the pill shape, but for now just hit `Enter` to run the skill.
    - You may be prompted at various times during the skill to allow access to your local files or to run `git` commands. Click **Allow** when prompted.
