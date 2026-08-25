@@ -32,7 +32,7 @@ We'll design it first using `/grill-with-docs`, then build it.
 3. Paste the following prompt after the pill.
 
 ```
-Build a web app using the ArcGIS Maps SDK for JavaScript. Configure the login so the user can sign-in to a named ArcGIS Online account enabled through this app client ID: AzFiycVu64TjjLrG.
+Build a web app using the ArcGIS Maps SDK for JavaScript. Configure the login so the user can sign in to a named ArcGIS Online account enabled through this app client ID: AzFiycVu64TjjLrG.
 
 Show a full-screen map of U.S. counties using a public ArcGIS Living Atlas demographic feature layer (please find a current public ACS county-level layer and confirm it loads). Color the counties by median household income as a choropleth.
 
