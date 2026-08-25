@@ -15,7 +15,7 @@ We'll design it first using `/grill-with-docs`, then build it.
 
 ## Step 1 — Open your Experience Builder Folder in VS Code
 
-We'll be using a different Visual Studio workspace for this exercise, so you can save your edits from Exercises 1-3.
+We'll be using a different VS Code workspace for this exercise, so you can save your edits from Exercises 1-3.
 
 Open a new window of VS Code so you can keep these instructions open. In VS Code: **File → New Window**
 
