@@ -3,11 +3,13 @@
 > 💡 **Tip:** Press `Ctrl+Shift+V` to view this file as a formatted preview (or `Cmd+Shift+V` on Mac).
 > New to VS Code? Keep [Exercise 0 — VS Code and GitHub Copilot setup](../exercise-00-vscode-setup/exercise-00-vscode-setup.md) open for reference.
 
-This is a much more deep developer topic, so you have a choose your own adventure here. If you are brand new to the ArcGIS Maps SDK for JavaScript, start with Step 1a - beginner workflow. This will be a more straightfoward app development process to start out with. If you are comfortable with the ArcGIS Maps SDK for JavaScript and want to dive right in, start with the Step 1b workflow. This will involve OAuth, the ArcGIS AI Components, and some more complex app development and troubleshooting.
+This is a deeper developer topic, so you have a choose-your-own-adventure ahead. Pick the path that matches your experience:
 
-**What you'll build for 1a:** a web app using the ArcGIS Maps SDK for JavaScript and its AI Components — users sign in, load and switch between web maps, and chat with a set of agents (the built-in ones plus two custom agents you define).
+- **Step 1a – Beginner workflow:** Start here if you're new to the ArcGIS Maps SDK for JavaScript. It's a more straightforward introduction to the app development process.
+  - **What you'll build:** a web app using the ArcGIS Maps SDK for JavaScript with OAuth sign-in — a full-screen choropleth map of U.S. counties colored by median household income from a Living Atlas ACS layer, plus a side panel chart that animates to show a county's stats as you hover and highlights that county on the map.
 
-**What you'll build for 1b:** a web app using the ArcGIS Maps SDK for JavaScript and its AI Components — users sign in, load and switch between web maps, and chat with a set of agents (the built-in ones plus two custom agents you define).
+- **Step 1b – Advanced workflow:** Start here if you're comfortable with the SDK and want to dive right in. It covers OAuth, the ArcGIS AI Components, and more complex app development and troubleshooting.
+  - **What you'll build:** a web app using the ArcGIS Maps SDK for JavaScript and its AI Components — users sign in, load and switch between web maps, and chat with a set of agents (the built-in ones plus two custom agents you define).
 
 We'll design it first using `/grill-with-docs`, then build it.
 
@@ -20,6 +22,9 @@ We'll design it first using `/grill-with-docs`, then build it.
 
 ## Step 1a — The prompt - beginner workflow
 
+> [!IMPORTANT]
+> The prompt below uses a Client ID that requires an ArcGIS Online account in the [Esri Federal Organization](https://esrifederal.maps.arcgis.com/home/index.html). If you don't have one, follow [pre-work document 05](../docs/05-create-arcgis-online-oauth-application.md) to create your own OAuth application in any ArcGIS Online org to use instead.
+
 1. Open a new chat in the GitHub Copilot panel by selecting the `+` button at the top of the window. Ensure your model is set to either **GPT-5.6 Sol** or **Claude Opus 5**.
 
 2. Start by typing a forward slash (`/`) to see the list of available skills. Select `/grill-with-docs` from the list by arrowing up or down to highlight it and then press tab, but do not press enter yet.
@@ -27,7 +32,7 @@ We'll design it first using `/grill-with-docs`, then build it.
 3. Paste the following prompt after the pill.
 
 ```
-Build a web app using the ArcGIS Maps SDK for JavaScript. No sign-in or OAuth. Use a single hardcoded API key for the basemap.
+Build a web app using the ArcGIS Maps SDK for JavaScript. Configure the login so the user can sign-in to a named ArcGIS Online account enabled through this app client ID: AzFiycVu64TjjLrG.
 
 Show a full-screen map of U.S. counties using a public ArcGIS Living Atlas demographic feature layer (please find a current public ACS county-level layer and confirm it loads). Color the counties by median household income as a choropleth.
 
@@ -35,7 +40,11 @@ Add a side panel with a chart. When I hover over a county, the chart should smoo
 
 Make it look polished: clean layout, a title, a legend, and a nice color ramp. Use a charting approach that animates between values on hover.
 
-Walk me through the setup step by step, explain each ArcGIS SDK concept as you introduce it.
+Before grilling me on design decisions, use the the js-sdk skill and the arcgis-docs-lookup skill to look up anything you are not sure about for the overall design and approach.
+
+Ask me about anything ambiguous before we settle the design.
+
+Write all code and files for this project only inside the `exercise-02-javascriptsdk/` folder in this repo. Create it if it doesn't exist. Don't add or modify files anywhere else in the repo.
 ```
 
 4. Press `Enter` to run the skill.
@@ -44,6 +53,9 @@ Walk me through the setup step by step, explain each ArcGIS SDK concept as you i
 
 ## Step 1b — The prompt - advanced workflow
 
+> [!IMPORTANT]
+> The prompt below uses a Client ID that requires an ArcGIS Online account in the [Esri Federal Organization](https://esrifederal.maps.arcgis.com/home/index.html). If you don't have one, follow [pre-work document 05](../docs/05-create-arcgis-online-oauth-application.md) to create your own OAuth application in any ArcGIS Online org to use instead.
+
 1. Open a new chat in the GitHub Copilot panel by selecting the `+` button at the top of the window. Ensure your model is set to either **GPT 5.6 Sol** or **Opus 5**.
 
 2. Start by typing a forward slash (`/`) to see the list of available skills. Select `/grill-with-docs` from the list by arrowing up or down to highlight it and then press tab, but do not press enter yet.
@@ -51,13 +63,11 @@ Walk me through the setup step by step, explain each ArcGIS SDK concept as you i
 3. Paste the following prompt after the pill.
 
 ```
-I want to build a web app using the ArcGIS Maps SDK for JavaScript and its AI Components. It should have:
+I want to build a react web app using the ArcGIS Maps SDK for JavaScript and its AI Components. It should have:
 
-1. Sign-in to ArcGIS (named ArcGIS Online account).
+1. ArcGIS Online sign in enabled through this app client ID: AzFiycVu64TjjLrG.
 
-2. The ability to switch between web maps - but when the app first loads, start by prompting me to choose which map to load.
-
-3. When loading the map from my organization, or switching the map, immediately create embeddings for the assistant to use.
+2. This web map already loaded into the app: ed546c8d53204931948ae409bed86a26
 
 4. Add the out-of-the-box agents that come with the AI Components, and create two custom agents:
    - a custom agent that lets me add any layer from my ArcGIS organization to the map,
@@ -96,21 +106,18 @@ Write all code and files for this project only inside the `exercise-02-javascrip
 
 Because the agent designs the app during the interview, the exact run command depends on what it built (a plain HTML page, a Vite app, and so on). These steps work for any of them:
 
-1. **Register an OAuth app in ArcGIS Online.** The sign-in needs a client ID. In ArcGIS Online: **Content → New item → Developer credentials** (OAuth 2.0), then add your local address (e.g. `https://localhost:5173`) as a **Redirect URI**. Copy the generated **Client ID**.
+1. **Ask the agent how to run it.** Something like: _"How do I install dependencies and run this app locally?"_ For a Vite app that's usually `npm install` then `npm run dev`; for a plain HTML page it may just be the Live Preview extension.
 
-2. **Give the app the client ID.** Ask the agent where to put it — usually an `.env.local` file or a config value. It will tell you the exact variable name for the app it built. This ID is not a secret so it is ok to share with the agent.
+2. **Open the local address** the run command prints (often `https://localhost:5173`) in your browser.
 
-> [!IMPORTANT]
-> NEVER share API keys or secrets with the agent. It doesn't need them to build your app, and they are sensitive information that should not be shared.
+3. **Sign in** with your ArcGIS Online named account when the app prompts you. If you used the provided Client ID, this will be your Esri Federal login.
 
-3. **Ask the agent how to run it.** Something like: _"How do I install dependencies and run this app locally?"_ For a Vite app that's usually `npm install` then `npm run dev`; for a plain HTML page it may just be the Live Preview extension.
+4. Explore the app:
 
-4. **Open the local address** the run command prints (often `https://localhost:5173`) in your browser.
+   For 1a, hover over the datasets, are the indicators and graphs in your app changing dynamically?
 
-5. **Sign in** with your ArcGIS Online named account when the app prompts you.
-
-6. **Try each agent** in the assistant chat:
-   - ask a built-in agent to navigate or explore the map (e.g. _"zoom to the largest features"_),
+   For 1b, **try each agent** in the assistant chat:
+   - ask a built-in agent to navigate or explore the map (e.g. _"how many big foot sightings are in California"_),
    - ask your **org-layer agent** to add a layer from your organization,
    - ask your **Living Atlas agent** to add a Living Atlas layer.
 
@@ -120,15 +127,27 @@ Test and iterate with the agent as needed.
 
 - Use the **`/diagnosing-bugs`** skill on something that you notice is not working as expected.
 
-## Step 8 — OPTIONAL — Add a feature
+## Step 8 — OPTIONAL — Add a feature or change the design
 
+- Ask the assistant
 - Start a **new `/grill-with-docs` session** scoped to just the new feature you want to add. Design it, then build it, just like before.
 
 ## Key Takeaways
 
-### When something breaks, or you want to add more
+### Building a new app or workflow outside of this exercise
 
-You've built the core. Here's how to keep going once the workshop's over.
+You've built an example. Here's how to keep going once the workshop's over.
+
+The same workflow will work for other apps and maps. Be specific in your prompts and utilize the skills.
+
+If you didn't need to work through the OAuth workflow this time and used the provided Client ID, follow [pre-work document 05](../docs/05-create-arcgis-online-oauth-application.md) to learn more.
+
+Once you've created the app or OAuth with an API key, you can ask the agent where to put it — usually an `.env.local` file or a config value. It will tell you the exact variable name for the app it built. This ID is not a secret so it is ok to share with the agent.
+
+> [!IMPORTANT]
+> NEVER share API keys or secrets with the agent. It doesn't need them to build your app, and they are sensitive information that should not be shared.
+
+### When something breaks, or you want to add more
 
 **When something breaks.** Instead of just telling the agent "it's not working," ask it to use **`/diagnosing-bugs`**. It runs a disciplined loop — reproduce the bug → shrink it down to the smallest failing case → form a hypothesis → instrument and test → fix → add a check so it can't come back. That structure is what makes it reliable on the hard bugs, where a plain "fix this" tends to send the AI in circles. For a quick typo it's overkill; for a "why is this behaving strangely" moment, reach for it.
 

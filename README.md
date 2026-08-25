@@ -25,7 +25,7 @@ Complete the guides in order:
 
 ### Optional guides
 
-- [Guide 04: Set up Experience Builder Developer Edition](docs/04-experience-builder.md)
+- [Guide 04: Set up Experience Builder Developer Edition](docs/04-experience-builder.md) - For the training, complete this set up only if you want to follow the Experience Builder widget development exercise hands-on. You can watch that section without installing Developer Edition.
 
 > [!NOTE]
 > Complete [Guide 05](docs/05-create-arcgis-online-oauth-application.md) if you do not have an Esri Federal ArcGIS Online account or want to use a different ArcGIS Online account.
