@@ -76,9 +76,9 @@ I want to build a react web app using the ArcGIS Maps SDK for JavaScript and its
 
 2. This web map already loaded into the app: ed546c8d53204931948ae409bed86a26
 
-4. Add the out-of-the-box agents that come with the AI Components, and create two custom agents:
+3. Add the out-of-the-box agents that come with the AI Components, and create two custom agents:
   - a custom agent that lets me add any layer from my ArcGIS organization to the map,
-   - and another custom agent that lets me add any layer from the ArcGIS Living Atlas to the map.
+  - and another custom agent that lets me add any layer from the ArcGIS Living Atlas to the map.
 
 Before grilling me on design decisions, use the the js-sdk skill and the arcgis-docs-lookup skill to look up specific elements you are not sure about. Cap web research at 5 minutes.
 
