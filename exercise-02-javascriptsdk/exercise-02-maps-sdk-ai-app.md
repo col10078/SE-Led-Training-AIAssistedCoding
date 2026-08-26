@@ -40,9 +40,16 @@ Add a side panel with a chart. When I hover over a county, the chart should smoo
 
 Make it look polished: clean layout, a title, a legend, and a nice color ramp. Use a charting approach that animates between values on hover.
 
-Before grilling me on design decisions, use the the js-sdk skill and the arcgis-docs-lookup skill to look up anything you are not sure about for the overall design and approach.
+Serve the app over HTTP at http://localhost:5173. This client ID only accepts redirect
+URLs beginning with http://localhost, so a plain-HTTP dev server (including the VS Code
+Live Preview extension) cannot complete sign-in.
 
-Ask me about anything ambiguous before we settle the design.
+Verify only what works without credentials: the app builds, the dev server
+serves http://localhost:5173, and the sign-in screen renders. Then stop and
+hand it to me with a short list of what I should check after I sign in.
+Do not simulate or fake a signed-in session.
+
+Before grilling me on design decisions, use the js-sdk skill and the arcgis-docs-lookup skill to look up specific elements you are not sure about. Cap web research at 5 minutes.
 
 Write all code and files for this project only inside the `exercise-02-javascriptsdk/` folder in this repo. Create it if it doesn't exist. Don't add or modify files anywhere else in the repo.
 ```
@@ -69,13 +76,17 @@ I want to build a react web app using the ArcGIS Maps SDK for JavaScript and its
 
 2. This web map already loaded into the app: ed546c8d53204931948ae409bed86a26
 
-4. Add the out-of-the-box agents that come with the AI Components, and create two custom agents:
-   - a custom agent that lets me add any layer from my ArcGIS organization to the map,
-   - and another custom agent that lets me add any layer from the ArcGIS Living Atlas to the map.
+3. Add the out-of-the-box agents that come with the AI Components, and create two custom agents:
+  - a custom agent that lets me add any layer from my ArcGIS organization to the map,
+  - and another custom agent that lets me add any layer from the ArcGIS Living Atlas to the map.
 
-Before grilling me on design decisions, use the the js-sdk skill and the arcgis-docs-lookup skill to look up anything you are not sure about for the overall design and approach.
+Before grilling me on design decisions, use the the js-sdk skill and the arcgis-docs-lookup skill to look up specific elements you are not sure about. Cap web research at 5 minutes.
 
-Ask me about anything ambiguous before we settle the design.
+Serve the app over HTTP at http://localhost:5173. This client ID only accepts redirect
+URLs beginning with http://localhost, so a plain-HTTP dev server (including the VS Code
+Live Preview extension) cannot complete sign-in.
+
+Verify the app yourself before handing it back. I will do the sign-in, but confirm the map and assistants all work, and confirm the sign-in screen disappears once signed in.
 
 Write all code and files for this project only inside the `exercise-02-javascriptsdk/` folder in this repo. Create it if it doesn't exist. Don't add or modify files anywhere else in the repo.
 ```
@@ -110,7 +121,7 @@ Because the agent designs the app during the interview, the exact run command de
 
 2. **Open the local address** the run command prints (often `https://localhost:5173`) in your browser.
 
-3. **Sign in** with your ArcGIS Online named account when the app prompts you. If you used the provided Client ID, this will be your Esri Federal login.
+3. **Sign in** with your ArcGIS Online named account associated with the Client ID you provided when the app prompts you (if you used the included Client ID, this will be your Esri Federal login). If you used the provided Client ID, this will be your Esri Federal login.
 
 4. Explore the app:
 
@@ -143,6 +154,7 @@ The same workflow will work for other apps and maps. Be specific in your prompts
 If you didn't need to work through the OAuth workflow this time and used the provided Client ID, follow [pre-work document 05](../docs/05-create-arcgis-online-oauth-application.md) to learn more.
 
 Once you've created the app and have an OAuth **Client ID**, you can ask the agent where to put it — usually an `.env.local` file or a config value. OAuth Client IDs are not secrets and are OK to share with the agent; API keys and client secrets are sensitive and should not be shared.
+
 > [!IMPORTANT]
 > NEVER share API keys or secrets with the agent. It doesn't need them to build your app, and they are sensitive information that should not be shared.
 
