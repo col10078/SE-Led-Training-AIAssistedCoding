@@ -14,7 +14,8 @@ Complete this quick walkthrough before the first project-building exercise, then
 - [1. Find your way around VS Code](#1-find-your-way-around-vs-code)
 - [2. Open and navigate files](#2-open-and-navigate-files)
 - [3. Open Copilot Chat](#3-open-copilot-chat)
-- [4. Use the integrated terminal](#4-use-the-integrated-terminal)
+- [4. Have Copilot write a project-level instruction for you](#4-have-copilot-write-a-project-level-instruction-for-you)
+- [5. Use the integrated terminal](#5-use-the-integrated-terminal)
 
 ## Quick recovery reference
 
@@ -65,6 +66,8 @@ Capture: Show a changed file in diff view with visible green additions and red r
 Alt text: A Copilot file diff showing green additions, red removals, the Files changed list, and Keep and Undo controls.
 -->
 
+[Back to Quick links](#quick-links)
+
 ## 1. Find your way around VS Code
 
 VS Code has five main areas:
@@ -92,6 +95,8 @@ The selected Activity Bar icon is highlighted. This example shows **Extensions**
 > [!TIP]
 > If a panel disappears, nothing was deleted. Reopen it from the **View** menu.
 
+[Back to Quick links](#quick-links)
+
 ## 2. Open and navigate files
 
 The Explorer shows the folders and files in your current project.
@@ -103,6 +108,8 @@ The Explorer shows the folders and files in your current project.
 - Unsaved files display a dot on their editor tab. Use `Ctrl+S` on Windows or `Cmd+S` on macOS to save.
 
 Use **Search** in the Activity Bar to find text across the entire project. Use `Ctrl+F` on Windows or `Cmd+F` on macOS to search only the open file.
+
+[Back to Quick links](#quick-links)
 
 ## 3. Open Copilot Chat
 
@@ -160,6 +167,8 @@ I plan to complete Exercise 1. What are the first two steps?
 
 This follow-up stays in the same conversation, so Copilot can use the context it already gathered.
 
+[Back to Quick links](#quick-links)
+
 ## 4. Have Copilot write a project-level instruction for you
 
 If you are new to programming, it may be helpful to have copilot respond using grammar and vocabulary that is not so developer focused. You can ask Copilot to respond, every time, in a more beginner-friendly manner. Try something like:
@@ -176,7 +185,9 @@ Create a project-wide Copilot instruction that makes ASD-STE100 Simplified Techn
 
 Copilot should then create the project-wide instruction file with the specified guidelines. These can be reviewed in the Explorer panel under the standard location for repo-wide Copilot instructions. This is usually a `.github/copilot-instructions.md` file.
 
-## 6. Use the integrated terminal
+[Back to Quick links](#quick-links)
+
+## 5. Use the integrated terminal
 
 Open the terminal with **Terminal > New Terminal** or `` Ctrl+` `` on Windows and macOS. It opens in the bottom panel and lets you run project commands without leaving VS Code.
 
@@ -243,3 +254,5 @@ Forked repositories won't automatically reflect changes from the original. To en
 5.  ```
     git push origin main
     ```
+
+[Back to Quick links](#quick-links)
