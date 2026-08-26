@@ -49,7 +49,7 @@ serves http://localhost:5173, and the sign-in screen renders. Then stop and
 hand it to me with a short list of what I should check after I sign in.
 Do not simulate or fake a signed-in session.
 
-Before grilling me on design decisions, use the the js-sdk skill and the arcgis-docs-lookup skill to look up specific elements you are not sure about. Cap web research at 5 minutes.
+Before grilling me on design decisions, use the js-sdk skill and the arcgis-docs-lookup skill to look up specific elements you are not sure about. Cap web research at 5 minutes.
 
 Write all code and files for this project only inside the `exercise-02-javascriptsdk/` folder in this repo. Create it if it doesn't exist. Don't add or modify files anywhere else in the repo.
 ```
